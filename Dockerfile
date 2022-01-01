@@ -1,9 +1,8 @@
 from alpine:edge
 run apk update && apk upgrade && \
- apk add --virtual build-dependencies py2-pip && \
- apk add bash supervisor xvfb x11vnc ttf-dejavu openbox dbus && \
+ apk add --virtual build-dependencies && \
+ apk add bash supervisor xvfb x11vnc ttf-dejavu openbox dbus gnome-icon-theme && \
  apk add novnc nicotine-plus --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted && \
- pip install mutagen && \
  mkdir -p /root/nicotine-downloads && \
  sed -i "s/scale', false/scale', true/" /usr/share/novnc/vnc_lite.html && \
  ln -s /root/nicotine-downloads /usr/share/novnc && \

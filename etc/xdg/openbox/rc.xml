@@ -5,10 +5,13 @@
   <number>1</number>
   <popupTime>0</popupTime>
 </desktops>
+<theme>
+  <titleLayout></titleLayout>
+</theme>
 <applications>
   <application type="normal">
-    <!--<maximized>yes</maximized>-->
-    <fullscreen>yes</fullscreen>
+    <maximized>yes</maximized>
+    <!--<fullscreen>yes</fullscreen>-->
   </application>
 </applications>
 </openbox_config>
